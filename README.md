@@ -1,4 +1,4 @@
-# Windows-CapsLock-Mapper.
+# CapsLock Mapper.
 
 A small Windows utility that maps the Caps Lock key to simulate a left mouse click, helping reduce strain on your right wrist. It offers fast and simple command-line options, making it especially useful for developers who are comfortable with the CLI.
 
@@ -58,6 +58,11 @@ cm r -r                       # Remove mapper from registry (alias for reg)
 cm --help                     # Show help message
 cm -v                         # Show version info
 ```
+
+
+## Note
+
+This application is currently supported only on Windows.
 
 
 ## Installation
