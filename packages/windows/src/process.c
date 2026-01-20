@@ -314,7 +314,8 @@ int show_version() {
 int show_help() {
     printf("Usage:\n");
     printf("  on                       - Start mapper process\n");
-    printf("  off                      - Terminate mapper process\n");
+    printf("  off                      - Terminate mapper process\n\n");
+    
     printf("  status | s               - Check mapper status\n\n");
 
     printf("  env | e                  - Manage environment variables\n");
