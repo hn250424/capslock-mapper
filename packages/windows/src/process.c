@@ -56,14 +56,23 @@ int off_runner() {
 }
 
 int show_status() {
+    HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+    if (hOut == INVALID_HANDLE_VALUE) return FAIL;
+
+    DWORD dwMode = 0;
+    if (GetConsoleMode(hOut, &dwMode)) {
+        dwMode |= 0x0004;
+        SetConsoleMode(hOut, dwMode);
+    }
+
     // 1. Check Mutex.
     int mutex_response = find_mutex(MUTEX_KEY_RUNNER);
 
     // 2. Check Env.
     // Get env path.
-    HKEY hKey_env;
+    HKEY hKey_env = NULL;
     DWORD size = 0;
-    char* envPath;
+    char* envPath = NULL;
 
     int envPathResult = get_env_path(&hKey_env, &size, &envPath);
     if (envPathResult != SUCCESS) {
@@ -307,7 +316,7 @@ int remove_registry() {
 }
 
 int show_version() {
-    printf("%s version %s\n", APP_NAME, VERSION);
+    printf("%s\n", VERSION);
     return SUCCESS;
 }
 

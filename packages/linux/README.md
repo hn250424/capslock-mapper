@@ -54,7 +54,7 @@ cm -v                              # Show version info
 
 ## Download
 
-1. **Download** the latest version of `cm-linux.tar.gz` from the [release page](https://github.com/Hyeonnam-J/Windows-CapsLock-Mapper/releases/latest)
+1. **Download** the latest version of `cm-linux.tar.gz` from the [release page](https://github.com/Hyeonnam-J/Windows-CapsLock-Mapper/releases)
 2. **Extract** the contents of the zip file to your desired directory.
 
 

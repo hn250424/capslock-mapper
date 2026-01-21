@@ -64,7 +64,7 @@ cm -v                         # Show version info
 
 ## Installation
 
-1. **Download** the latest version of `cm-windows.zip` from the [release page](https://github.com/Hyeonnam-J/Windows-CapsLock-Mapper/releases/latest)
+1. **Download** the latest version of `cm-windows.zip` from the [release page](https://github.com/Hyeonnam-J/Windows-CapsLock-Mapper/releases)
 2. **Extract** the contents of the zip file to your desired directory.
 
 
@@ -79,8 +79,8 @@ After extracting the files, follow these steps to set up the application:
 .\cm env -add
 ```
 
-  After this, you will be able to use the cm command in your terminal. If the command doesn't work immediately, try restarting your terminal.
-  To remove the environment variable, you can run:
+After this, you will be able to use the cm command in your terminal. If the command doesn't work immediately, try restarting your terminal.
+To remove the environment variable, you can run:
 
 ```bash
 cm env --remove
@@ -93,7 +93,7 @@ cm env --remove
 cm reg --add
 ```
 
-   This will add the necessary registry entry. If you want to disable this feature later, run:
+This will add the necessary registry entry. If you want to disable this feature later, run:
 
 ```bash
 cm reg --remove
